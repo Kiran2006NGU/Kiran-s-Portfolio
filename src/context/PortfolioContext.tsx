@@ -49,8 +49,8 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       ...data,
       personalInfo: {
         ...data.personalInfo,
-        github: 'https://github.com/Kiran2006NGU',
-        linkedin: 'https://www.linkedin.com/in/kiran-kumar-behera-53aa08306/',
+        github: data.personalInfo?.github || 'https://github.com/Kiran2006NGU',
+        linkedin: data.personalInfo?.linkedin || 'https://www.linkedin.com/in/kiran-kumar-behera-53aa08306/',
       }
     };
   };
